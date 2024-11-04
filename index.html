@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WakaLanches</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lanches Naturais</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Saladas Variadas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Bebidas Detox</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Barra Proteica</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="img/LOGODAWAKA.png" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa lanchonete variações para ter uma ótima refeição!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será refeição de hoje?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos!!!</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/sanduiche-de-salpicao.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/sanduiche-veggie-crocante.png"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/sanduiche-de-atum-gourmet.png" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/wrap gourmet.png" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/wrap-de-mandioca.jpg" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/variações de sucos.jpg" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">COMBO NATUREBA!!</h2>
+          <p class="descrição__texto">
+            Salada Caprese + 2 Sucos naturais + 2 Sauíches 
+          </p>
+        </div>
+        <img src="img/COMBONATUREBA.png" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/sanduiche de abacate.jpeg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/sanduiche do seu jeito.jpg" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/sanduiche nutri.jpg" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/sauduíche ss.jpg" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/wrap.jpg" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/sucos naturais.jpeg" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Nutricionista do Waka</h3>
+          <h2 class="descrição__titulo-livro">Laura Campos</h2>
+          <p class="descrição__texto">Conheça Laura Campos, uma nutricionista apaixonada por transformar vidas através da alimentação.
+          Com anos de experiência, ela oferece um atendimento personalizado, criando planos alimentares adaptados às necessidades de cada paciente.
+          Ela auxilia seus pacientes a alcançar seus objetivos de saúde de forma sustentável.
+          Sua empatia e compromisso com o bem-estar tornam cada consulta um espaço acolhedor e motivador. 
+          Agende sua consulta e dê o primeiro passo rumo a uma vida mais saudável!"
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/Laura Campos nutricionista.png" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="conat
+        !-- 2º coluna
+        a href="# class="botões__ancora">SAIBA MAIS</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">NOSSOS PATROCINADORES</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link"></div>
+        <img src="img/logo da mãe terra.png" class="descrição__imagem" />
+      </div></a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link"></a>
+        <img src="img/logo da organic.png" class="descrição__imagem" />
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link"></a>
+        <img src="img/logo atelie.png" class="descrição__imagem" />
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link"></a>
+        <img src="img/logo da natural one.png" class="descrição__imagem" />
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link"></a>
+        <img src="img/logo da oba.png" class="descrição__imagem" />
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link"></a>
+        <img src="" class="descrição__imagem" />
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link"></a>
+        <img src="img/LOGO-bold.png" class="descrição__imagem" />
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link"></a>
+        <img src="img/logo Natural-Life-SemGluten.png" class="descrição__imagem" />
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Não perca novos cardápios, promoções, combos e muito mais!
+    </p>
+    <p>
+    <h class="contato__texto">Catraste seu email abaixo:</h>
+    <p></p>
+    </p>
+    <input type="email" placeholder="."
+     class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+  <h2 class="rodapé__titulo">WakaLanches</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
